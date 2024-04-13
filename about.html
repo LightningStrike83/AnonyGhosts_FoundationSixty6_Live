@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About- Foundation Sixty6</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#3a53a4">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/a7c4f622e4.js" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" defer src="js/main.js"></script>
+</head>
+<body data-page="about">
+    <h1 class="hidden">Foundation Sixty6 About Page</h1>
+
+    <header class="full-width-grid-con">
+      <div id="header-con" class="grid-con">
+        <div id="header-logo" class="col-span-2 m-col-span-3">
+          <a href="index.html"><img src="images/logo-final.svg" alt="Foundation Sixty6 logo"></a>
+        </div>
+
+        <div id="hamburger-menu-icon" class="col-start-4 col-end-5">
+          <svg id="hamburger-menu" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.83 22">
+              <defs>
+                <style>
+                  .cls-20 {
+                    fill: #3A53A4;
+                    stroke: #3A53A4;
+                    stroke-miterlimit: 10;
+                    stroke-width: 3px;
+                  }
+                </style>
+              </defs>
+              <g id="dashes" data-name="Layer 2">
+                <line class="cls-20" y1="1" x2="51.83" y2="1"/>
+                <line class="cls-20" y1="11" x2="51.83" y2="11"/>
+                <line class="cls-20" y1="21" x2="51.83" y2="21"/>
+              </g>
+            </svg>
+        </div>
+
+        <div id="nav-menu" class="m-col-span-7">
+              <p><a href="get-services.html">Services</a></p>
+              <p><a href="network.html">Network</a></p>
+              <p id="explore" class="drop-menu">Explore ▼</p>
+              <p><a href="about.html">About</a></p>
+              <p><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div id="explore-menu" class="expand-menu">
+          <a href="events.html">Events</a>
+          <a href="blog.html">Blog</a>
+          <a href="career-volunteer.html">Careers & Volunteering</a>
+        </div>
+
+        <a href="donate.html" class="col-span-full m-col-span-2">
+          <div id="donate-button">
+            <div><span class="donate-text">Donate</span></div>
+          </div>
+        </a>
+        </div>
+    </header>
+    
+    <section id="about-hero" class="full-width-grid-con">
+        <div class="col-span-full hero-image">
+          <h2 class="hidden">About Hero Image</h2>
+            <p class="hero-text">About Us</p>
+        </div>
+    </section>
+
+    <section id="our-mission" class="grid-con">
+        <div id="mission-text" class="col-span-full m-col-span-6">
+            <h3 class="dmt">Our Mission</h3>
+            <p class="dmt">Our mission is to facilitate improved access to mental healthcare for youth aged 16-25 suffering from complex mental health conditions, as well as support them and their families. We are fighting for a future where care is more accessible and there is a greater understanding of mental health. <br><br> We aim to create a network of of physicians and mental healthcare providers who will offer counselling services for free, or at a reduced rate. We aim to create long term employment opportunities that understand the flexibility and support required by people with severe mental health challenges.</p>
+            <p class="dmt"></p>
+        </div>
+        <div id="long-pic" class="col-span-full m-col-span-6"></div>
+    </section>
+
+    <section id="our-story" class="full-width-grid-con">
+        <div id="story-con" class="grid-con">
+            <div class="col-span-full">
+                <h3>Our Story</h3>
+                <p>Navigating their son Caelan’s severe mental health challenges, the Hagerty family sheds light on the gaps in Ontario’s mental healthcare system. Their mission to secure Caelan’s future extends to advocating for systemic improvements, echoing the shared struggles of many families.</p>
+            </div>
+
+            <div id="about-video-con" class="col-span-full">
+              <div id="about-video" class="video-con">
+                <video controls poster="images/video-posters/founders.jpg">
+                  <source src="video/founders-video.mp4">
+                  <p>Sincere apologies but it looks like your browser can't support this playback. Please visit our Youtube channel to watch the video!</p>
+                </video>
+
+                <div class="video-controls hidden">
+                  <div id="video-logo-con">
+                    <img id="video-logo" src="images/logo.svg" alt="Video Logo">
+                  </div>
+        
+                  <button id="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+        
+                  <button id="pause-button">
+                      <i class="fa-solid fa-pause"></i>
+                  </button>
+        
+                  <button id="stop-button">
+                      <i class="fa-solid fa-stop"></i>
+                  </button>
+        
+                  <i class="fa fa-volume-up"></i>
+                  <input type="range" id="change-volume" step="0.05" min="0" max="1" value="1">
+        
+                  <button id="full-screen">
+                      <i class="fa-solid fa-compress"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-leadership" class="grid-con">
+        <div id="leadership-text" class="col-span-full">
+            <h3 class="dmt">Our Leadership</h3>
+            <p class="dmt">Unveiling the Pillars of Foundation Sixty6 Leadership</p>
+        </div>
+
+        <div id="members" class="col-span-full">
+            <div class="member-profile">
+                <div id="stuart-icon" class="member-pic">
+                  <div class="about-shader"></div>
+                  <p class="member-text dmt desktop">"This foundation as I see it is to provide opportunities for a lifetime, but more widely, to provide hope to people out there that people do care."</p>
+                </div>
+                <div class="green-bumper"></div>
+                <p class="member-name dmt">Stuart du Kamp</p>
+                <p class="member-text dmt portable">"This foundation as I see it is to provide opportunities for a lifetime, but more widely, to provide hope to people out there that people do care."</p>
+            </div>
+
+            <div class="member-profile">
+                <div id="aimee-icon" class="member-pic">
+                  <div class="about-shader"></div>
+                  <p class="member-text dmt desktop">"We identfied all these areas through our own experience with Caelan and wanted to make a difference so we started this foundation to do that."</p>
+                </div>
+                <div class="green-bumper"></div>
+                <p class="member-name dmt">Aimee Hagerty</p>
+                <p class="member-text dmt portable">"We identfied all these areas through our own experience with Caelan and wanted to make a difference so we started this foundation to do that."</p>
+            </div>
+
+            <div class="member-profile">
+                <div id="caelan-icon" class="member-pic">
+                  <div class="about-shader"></div>
+                  <p class="member-text dmt desktop">"This foundation is meant to bring together not only people and families but doctors, caregivers, and others who are willing to provide support."</p>
+                </div>
+                <div class="green-bumper"></div>
+                <p class="member-name dmt">Caelan Hagerty</p>
+                <p class="member-text dmt portable">"This foundation is meant to bring together not only people and families but doctors, caregivers, and others who are willing to provide support."</p>
+            </div>
+
+            <div class="member-profile">
+                <div id="bill-icon" class="member-pic">
+                  <div class="about-shader"></div>
+                  <p class="member-text dmt desktop">"We're trying to help other people trying to navigate through the services that are out there."</p>
+                </div>
+                <div class="green-bumper"></div>
+                <p class="member-name bottom-member dmt">Bill Hagerty</p>
+                <p class="member-text dmt portable">"We're trying to help other people trying to navigate through the services that are out there."</p>
+            </div>
+
+            <div class="member-profile">
+                <div id="russell-icon" class="member-pic">
+                  <div class="about-shader"></div>
+                  <p class="member-text dmt desktop">"I see struggles and it's compelling to make you want to work, to bring this to people's attention."</p>
+                </div>
+                <div class="green-bumper"></div>
+                <p class="member-name bottom-member dmt">Russell Levangie</p>
+                <p class="member-text dmt portable">"I see struggles and it's compelling to make you want to work, to bring this to people's attention."</p>
+            </div>
+
+            <div class="member-profile">
+                <div id="you-icon" class="member-pic">
+                  <div class="about-shader"></div>
+                  <p class="member-text dmt desktop">You are our sixth and key member of the Foundation</p>
+                </div>
+                <div class="green-bumper"></div>
+                <p class="member-name bottom-member dmt">You</p>
+                <p class="member-text dmt portable">You are our sixth and key member of the Foundation</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="you" class="full-width-grid-con">
+        <div id="you-con" class="grid-con">
+            <div id="you-img" class="col-span-full m-col-start-2 m-col-end-7">
+              <img src="images/girl.svg" alt="You">  
+            </div>
+            <div id="you-text" class="col-span-full m-col-span-5 l-col-span-6">
+                <h3>You</h3>
+                <p>Foundation Sixty6 isn't just comprised of the board members. Everyone who volunteers, donates, or even spreads the word is helping the foundation in their goal. There are plenty of opportunities to become an active part of the foundation.</p>
+                <p id="about-button"><a href="career-volunteer.html">View Opportunities</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-con">
+      <div class="col-span-full divider"></div>
+    </div>
+
+    <section id="our-partners" class="grid-con">
+        <div id="partner-text" class="col-span-full">
+            <h3 class="dmt">Our Empowering Partners</h3>
+            <p class="dmt">These partners believe in our cause and help us in providing support and opportunities to those who need it.</p>
+        </div>
+
+        <div class="catch-handle col-span-full"></div>
+
+        <div id="partner-con" class="col-span-full">
+            <div v-for="partner in partnerList" class="partner-info-con">
+              <a :href="partner.page_url">
+                <div class="partner-info">
+                  <div class="partner-icon" :style="{ backgroundImage: 'url(../images/' + partner.image_url + ')' }"></div>
+                  <p class="dmt">{{partner.name}}</p>
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <div id="become-con" class="col-span-full">
+            <h3 class="dmt" id="about-title-mobile">Become A Partner?</h3>
+        </div>
+
+        <div id="partner-img-con" class="col-span-full m-col-start-2 m-col-end-6">
+            <div id="partner-image"></div>
+        </div>
+
+        <div id="become-text-con" class="col-span-full m-col-span-5">
+            <div id="become-text">
+                <h3 id="about-title-tablet" class="dmt">Become A Partner?</h3>
+                <p class="dmt">Help grow us by partnering and being part of this movement. Contact us <a id="about-contact-link" href="contact.html">here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="full-width-grid-con">
+      <div class="grid-con">
+        <div id="footer-logo-con" class="col-start-2 col-end-4 m-col-span-3">
+          <a href="index.html"><img id="footer-logo" src="images/logo-final.svg" alt="logo"></a>
+        </div>
+
+        <div id="footer-links" class="col-span-full m-col-span-4">
+          <ul>
+            <li><a href="get-services.html">Services</a></li>
+            <li><a href="network.html">Network</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="career-volunteer.html">Volunteer</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+
+        <div id="sm-newsletter" class="col-span-full m-col-span-5">
+          <div id="sm-icons">
+            <a class="footer-sm-icon" href="#"><img src="images/icons/tiktok.svg" alt="TikTok Icon"></a>
+            <a class="footer-sm-icon" href="#"><img src="images/icons/youtube.svg" alt="Youtube Icon"></a>
+            <a class="footer-sm-icon" href="#"><img src="images/icons/facebook.svg" alt="Facebook Icon"></a>
+            <a class="footer-sm-icon" href="#"><img src="images/icons/instagram.svg" alt="Instagram Icon"></a>
+            <a class="footer-sm-icon" href="#"><img src="images/icons/linkedin.svg" alt="LinkedIn Icon"></a>
+          </div>
+
+          <p id="newsletter-title">Subscribe To Our Newsletter</p>
+
+          <form class="newsletter-sign-up">
+            <label for="email"></label>
+            <input id="email" name="email" type="text">
+            <input id="newsletter-send" type="submit" value="Submit">
+          </form>
+
+          <div id="newsletter-feedback"></div>
+          <div id="newsletter-confirm"></div>
+        </div>
+      </div>
+    </footer>
+  
+      <section id="bottom-menu">
+        <h2 class="hidden">Bottom Menu</h2>
+        <div id="activation-button">
+          <img class="bottom-icon" src="images/icons/information2.png" alt="Menu Icon">
+        </div>
+        
+        <template id="button-template">
+          <div class="clone-div">
+            <img class="clone-img">
+          </div>
+        </template>
+      </section>
+  
+      <section class="nav-lightbox lightbox">
+        <h2 class="hidden">Mobile Menu</h2>
+        <div class="grid-con">
+          <p class="lb-close col-start-4 col-end-5">X</p>
+          <div id="lightbox-menu" class="col-span-full">
+            <p><a href="get-services.html">Services</a></p>
+            <p><a href="network.html">Network</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="events.html">Events</a></p>
+            <p><a href="career-volunteer.html">Careers & Volunteering</a></p>
+            <p><a href="blog.html">Blog</a></p>
+            <p><a href="contact.html">Contact</a></p>
+          </div>
+        </div>
+      </section>
+  </body>
+  </html>

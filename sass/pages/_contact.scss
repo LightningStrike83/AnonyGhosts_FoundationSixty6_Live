@@ -1,0 +1,154 @@
+@use "../abstracts/variables" as v;
+
+#contact-hero {
+    background-image: url(../images/hero-images/contact.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 0 25%;
+    background-size: cover;
+}
+
+#need-support {
+    margin-bottom: 50px;
+    h3 {
+        margin-bottom: 12px;
+    }
+}
+
+#support-number {
+    text-align: center;
+    margin-bottom: 50px;
+    div {
+        border-radius: 20px;
+        padding-left: 45px;
+        padding-right: 45px;
+        background-color: v.$green;
+        h3 {
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+    }
+    
+}
+
+.number-con {
+    padding: 0!important;
+    margin-bottom: 30px;
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.support-break {
+    border-bottom: 1px solid v.$blue;
+}
+
+#contact-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+    #contact-con {
+        background-color: v.$sky-blue;
+        padding-bottom: 10px;
+    }
+    h3 {
+        margin-bottom: 20px;
+    }
+}
+
+#form-desc {
+    margin-top: 5px;
+}
+
+#contact-page-form {
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    #contact-hero {
+        margin-bottom: 30px;
+    }
+
+    #contact-hero, #need-support, #support-number, #contact-contact {
+        margin-bottom: 45px;
+    }
+
+    #contact-text h3, #need-support div h3 {
+        text-align: center;
+    }
+
+    .support-break {
+        display: none;
+    }
+
+    #support-number {
+        div {
+            padding-left: 15px!important;
+            padding-right: 15px!important;
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+
+    #help-numbers {
+        display: flex;
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+
+    #contact-contact {
+        #contact-con {
+            background-color: transparent;
+        }
+
+        #form-con {
+            div {
+                border-radius: 20px;
+                background-color: v.$sky-blue;
+                padding-left: 8.25%;
+                padding-right: 8.25%;
+            }
+        }
+    }
+
+    #contact-send {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #contact-hero, #need-support, #support-number, #contact-contact {
+        margin-bottom: 55px;
+    }
+
+    #support-number {
+        div {
+            padding-left: 10px!important;
+            padding-right: 10px!important;
+        }
+    }
+
+    .number-con {
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// @media screen and (min-width: 1920px) {
+//     #contact-hero, #need-support, #support-number, #contact-contact {
+//         margin-bottom: 65px;
+//     }
+
+//     .number-con {
+//         p {
+//             margin-bottom: 36px;
+//         }
+//     }
+// }

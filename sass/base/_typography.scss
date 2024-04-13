@@ -1,0 +1,249 @@
+@use "../abstracts/variables" as v;
+
+a, p, li, label {
+    color: black;
+    font-family: 'Lexend', 'Montserrat', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+a, p, li, h3 {
+    transition: all ease-in-out 0.5s;
+}
+
+h3 {
+    font-family: 'Lexend', 'Montserrat Alternates', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+    &:visited {
+        color: black;
+    }
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    color: white;
+    font-size: 26px;
+    font-family: 'Lexend', 'Montserrat Alternates', Arial, sans-serif;
+    z-index: 5;
+    background-color: v.$hero-green;
+    padding: 20px;
+}
+
+.hero-text:not(#home-hero-text) {
+    border-radius: 50px;
+}
+
+.donate-text, .send-button {
+    font-size: 15px;
+    font-family: 'Lexend', 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    color: white!important;
+}
+
+.nav-lightbox {
+    p, a {
+        font-family: 'Lexend', 'Montserrat Alternates', Arial, sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+.number-con {
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 10px;
+    }
+
+    .number {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+#newsletter-send {
+    font-family: 'Lexend', 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.donate-box-text {
+    font-size: 20px;
+}
+
+#emergency-phone {
+    h3 {
+        font-size: 14px;
+        color: white!important;
+        text-align: center!important;
+    }
+
+    p {
+        font-size: 12px;
+        color: white!important;
+        text-align: center!important;
+    }
+}
+
+.member-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#week-info {
+    #presents-title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-size: 40px;
+        padding: 30px;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    .reason-box  {
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    #emergency-phone {
+        h3 {
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    }
+    
+    .member-name {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    a, p, li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .hero-text {
+        font-size: 60px;
+        padding: 40px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .number-con {
+        h3 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 15px;
+        }
+    
+        .number {
+            font-size: 25px;
+        }
+    }
+
+    .reason-box  {
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    #emergency-phone {
+        h3 {
+            font-size: 20px;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+    }
+    
+}
+
+// @media screen and (min-width: 1920px) {
+//     a, p {
+//         font-size: 30px;
+//         line-height: 35px;
+//     }
+
+//     .hero-text {
+//         font-size: 80px;
+//     }
+
+//     h3 {
+//         font-size: 60px;
+//     }
+
+//     .number-con {
+//         h3 {
+//             font-size: 30px;
+//         }
+//         p {
+//             font-size: 25px;
+//         }
+    
+//         .number {
+//             font-size: 30px;
+//         }
+//     }
+
+//     .reason-box  {
+//         h3 {
+//             font-size: 30px;
+//         }
+
+//         p {
+//             font-size: 25px;
+//         }
+//     }
+
+//     #emergency-phone {
+//         h3 {
+//             font-size: 24px;
+//         }
+    
+//         p {
+//             font-size: 22px;
+//         }
+//     }
+    
+// }

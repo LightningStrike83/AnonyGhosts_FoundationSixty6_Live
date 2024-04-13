@@ -1,0 +1,101 @@
+@use "../abstracts/variables" as v;
+
+video {
+    max-width: 100%;
+}
+
+#video-logo-con {
+    margin-left: 5%;
+    max-width: 100px;
+    background-color: white;
+    padding: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    img {
+        width: 100%;
+    }
+}
+
+.video-con {
+    position: relative;
+}
+
+#home-video, #donate-video-con, #about-video-con {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+    background-color: v.$blue;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    button {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: transparent;
+        margin-left: 5%;
+    }
+}
+
+.video-controls.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fa, .fa-solid, .fa-regular {
+    font-size: 10px;
+    margin-left: 5%;
+    color: white;
+}
+
+i {
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    &:hover {
+        opacity: 60%;
+    }
+}
+
+input[type="range"] {
+    max-width: 70px;
+}
+
+#change-volume {
+    accent-color: v.$green;
+}
+
+.fa-volume-up {
+    margin-left: auto;
+}
+
+#full-screen {
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+@media screen and (min-width: 428px) {
+    input[type="range"] {
+        max-width: 100px;
+    }
+
+    .fa, .fa-solid, .fa-regular {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fa, .fa-solid, .fa-regular {
+        font-size: 20px;
+    }
+}

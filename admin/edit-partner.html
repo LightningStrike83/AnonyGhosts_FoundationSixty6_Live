@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <title>Edit Partner</title>
+</head>
+<body data-page="edit-partner">
+    <section class="full-width-grid-con admin-form">
+        <div class="col-span-full">
+            <form id="edit-partner-form" method="POST" enctype="multipart/form-data">
+                <input name="pk" type="hidden" :value="partnerInfo.id">
+                <label for="name">Name:</label><br><br>
+                <input name="name" type="text" :value="partnerInfo.name"><br><br><br>
+                <label for="page_url">Link:</label><br><br>
+                <input name="page_url" type="text" required :value="partnerInfo.page_url"><br><br><br>
+                <input class="admin-submit" name="submit" type="submit" value="Add">
+              </form>
+              <p id="partner-feedback-area"></p>
+        </div>
+    </section>
+
+</body>
+</html>

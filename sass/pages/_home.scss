@@ -1,0 +1,461 @@
+@use "../abstracts/variables" as v;
+
+#home-hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90%;
+    color: white;
+    text-align: center;
+    position: relative;
+    .hero-text {
+        line-height: normal;
+        padding-bottom: 0;
+    }
+    .hero-image {
+        align-content: flex-end;
+    }
+}
+
+#home-hero-link {
+    grid-column: 2/3;
+    text-decoration: none;
+}
+
+#home-con {
+    margin: 0;
+    grid-column: 2/3;
+    .hero-text {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+}
+
+.home-hero-supplementary-text {
+    font-size: 12px;
+    z-index: 5;
+    background-color: v.$hero-green;
+    color: white;
+    padding: 10px;
+}
+
+#waw-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        margin-bottom: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+    }
+}
+
+#waw-image {
+    margin-top: 30px;
+    height: 252px;
+    background-image: url(../images/hp-2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#fact-wrapper {
+    margin: 0;
+    grid-column: 2/3;
+}
+
+#facts-text {
+    p {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+    }
+}
+
+#home-instructions {
+    font-weight: 600;
+    display: none;
+}
+
+.fact-box, .fiction-box {
+    height: 235px;
+    margin-bottom: 30px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    h3, p {
+        color: white;
+    }
+}
+
+.fiction-title, .fact-title {
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.fiction-text, .fact-text {
+    font-size: 18px;
+}
+
+
+.ff-div {
+    height: 235px;
+    border-radius: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.5);
+    .shader {
+        border-radius: 20px;
+    }
+
+    .fact-box {
+        display: none;
+        flex-direction: column;
+    }
+
+    .fiction-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#hvc-button {
+    margin-top: 30px;
+    justify-self: center;
+}
+
+#mental-illness-con {
+    background-color: v.$bg-green;
+}
+
+#mi-wrapper {
+    margin: 0;
+    grid-column: 2/3;
+}
+
+#mi-text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.mental-health-info {
+    height: 290px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: v.$sky-blue;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    h3 {
+        padding-top: 30px;
+        color: white;
+        text-shadow: 0 2px black;
+    }
+
+    &:hover {
+        opacity: 75%;
+    }
+}
+
+#bp-div {
+    background-image: url(../images/drawings/bipolar.png);
+}
+
+#pd-div {
+    background-image: url(../images/drawings/psychotic-depression-plant.png);
+}
+
+#s-div {
+    background-image: url(../images/drawings/schizophrenia-plant.png);
+}
+
+.home-link, .mi-link {
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.home-redirect {
+    height: 290px;
+    border-radius: 20px;
+    background-color: v.$sky-blue;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &:hover {
+        opacity: 70%;
+    }
+    h3 {
+        color: white;
+    }
+    .shader {
+        border-radius: 20px;
+    }
+}
+
+#services-redirect {
+    background-image: url(../images/services.jpg);
+}
+
+#cv-redirect {
+    background-image: url(../images/volunteer.jpg);
+}
+
+#blog-redirect {
+    background-image: url(../images/blog.jpg);
+}
+
+#donate-redirect {
+    background-image: url(../images/donate.jpg);
+    margin-bottom: 0;
+}
+
+.redirect-title {
+    z-index: 5;
+}
+
+.fact-text {
+    margin-right: 3%;
+}
+
+#home-video-con {
+    background-color: v.$bg-green;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.arrow {
+    display: none;
+    font-size: 36px;
+    align-self: center;
+    color: v.$green;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    &:hover {
+        opacity: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .arrow {
+        display: block;
+    }
+
+    .home-hero-supplementary-text {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    #waw-text {
+        justify-content: center;
+        p {
+            text-align: left;
+        }
+    }
+
+    #waw-image {
+        margin-top: 0;
+        height: 270px;
+    }
+
+    #facts-text {
+        h3 {
+            text-align: center;
+        }
+    }
+
+    #fact-con {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ff-div {
+        width: 30%;
+        max-width: 100%;
+        height: 250px;
+        margin-bottom: 40px;
+    }
+
+    #blog-redirect {
+        margin-bottom: 0;
+    }
+
+    .fiction-title, .fact-title {
+        font-size: 18px;
+        margin-left: 5%;
+        padding-top: 20px;
+    }
+    
+    .fiction-text, .fact-text {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 12px;
+    }
+
+    #hvc-button {
+        margin-top: 50px;
+    }
+
+    #home-video-con {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h3 {
+            margin-bottom: 30px;
+        }
+    }
+
+    #home-video-title {
+        h3 {
+            text-align: center;
+        }
+    }
+
+    #mi-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mental-health-cards {
+        display: flex;
+        justify-content: space-around;
+        a {
+            width: 30%;
+        }
+    }
+
+    .mental-health-info {
+        height: 200px;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
+        h3 {
+            text-align: center;
+            font-size: 15px;
+            padding-top: 0;
+        }
+    }
+
+    #home-services-text {
+        h3 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #home-instructions {
+        display: block;
+    }
+
+    #home-hero {
+        .hero-text {
+            padding-bottom: 15px;
+            line-height: normal;
+        }
+    }
+
+    .home-hero-supplementary-text {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    #waw-image {
+        height: 408px;
+    }
+
+    .ff-div {
+        height: 350px;
+        .fact-box {
+            display: none;
+            margin-left: 0;
+        }
+
+        .fiction-box {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+        }
+    }
+
+    .fiction-title, .fact-title {
+        font-size: 25px;
+    }
+
+    .fact-text, .fiction-text {
+        font-size: 20px;
+    }
+
+    .mental-health-info {
+        height: 400px;
+        h3 {
+            font-size: 25px;
+        }
+    }
+
+    .home-video-con {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+// @media screen and (min-width: 1920px) {
+//     #home-hero {
+//         .hero-text {
+//             padding-bottom: 40px;
+//             line-height: normal;
+//         }
+//     }
+
+//     .home-hero-supplementary-text {
+//         font-size: 25px;
+//         padding-bottom: 40px;
+//     }
+
+//     #waw-image {
+//         height: 780px;
+//     }
+
+//     .ff-div {
+//         height: 480px;
+//         margin-bottom: 150px;
+//     }
+
+//     .fiction-title, .fact-title {
+//         font-size: 30px;
+//     }
+
+//     .mental-health-info {
+//         height: 500px;
+//         h3 {
+//             font-size: 36px;
+//         }
+//     }
+// }
