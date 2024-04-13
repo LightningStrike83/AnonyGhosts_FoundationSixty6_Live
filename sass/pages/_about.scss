@@ -1,0 +1,585 @@
+@use "../abstracts/variables" as v;
+
+#about-hero {
+    background-image: url(../images/hero-images/about.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+}
+
+#mission-text {
+    display: flex;
+    flex-direction: column;
+    h3, p {
+        margin-bottom: 15px;
+    }
+    img {
+        max-height: 213px;
+        margin-bottom: 20px;
+    }
+}
+
+#long-pic {
+    height: 213px;
+    background-image: url(../images/about-support.jpg);
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#our-story {
+    padding-bottom: 40px;
+    background-color: v.$bg-green;
+}
+
+#story-con {
+    grid-column: 2/3;
+    margin: 0;
+    text-align: center;
+    h3 {
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+    }
+}
+
+#leadership-text {
+    h3 {
+        margin-bottom: 10px;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.member-profile {
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.member-pic {
+    height: 280px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: all 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#stuart-icon {
+    background-image: url(../images/profile-icon/stuart_du_kamp.png);
+    background-position: 60%;
+    background-color: #3A53A4;
+}
+
+#aimee-icon {
+    background-image: url(../images/profile-icon/aimee_hagerty.png);
+    background-color: #EC2E91;
+}
+
+#caelan-icon {
+    background-image: url(../images/profile-icon/caelan_hagerty.png);
+    background-color: #9BCA3B;
+}
+
+#bill-icon {
+    background-image: url(../images/profile-icon/bill_hagerty.png);
+    background-color: #8C63A8;
+}
+
+#russell-icon {
+    background-image: url(../images/profile-icon/russell_levangie.png);
+    background-color: #FFB132;
+}
+
+#you-icon {
+    background-image: url(../images/boy.svg);
+    background-color: #70CBD6;
+    background-size: contain;
+}
+
+.member-name, .member-text {
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.member-text {
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+#you {
+    background-color: #70CBD6;
+}
+
+#you-con {
+    margin: 0;
+    grid-column: 2/3;
+}
+
+#you-img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 244px;
+    background-color: #38656A;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#you-text {
+    display: flex;
+    flex-direction: column;
+    h3 {
+        margin-bottom: 10px;
+        color: white;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+#about-button {
+    align-self: center;
+    transition: all ease-in-out 0.5s;
+    a {
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: v.$blue;
+        border-radius: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: white;
+        font-size: 17px;
+    }
+    &:hover {
+        a {
+            background-color: v.$green;
+        }
+    }
+}
+
+#partner-text {
+    margin-bottom: 50px;
+    p {
+        text-align: center;
+    }
+}
+
+.partner-info-con {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.partner-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    transition: all ease-in-out 0.5s;
+    img {
+        width: 128px;
+    }
+    p {
+        font-size: 14px;
+        text-align: right;
+    }
+    &:hover {
+        background-color: v.$green;
+        opacity: 70%;
+    }
+}
+
+#partner-img-con {
+    height: 493px;
+    background-image: url(../images/partner.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+    background-position: 70%;
+}
+
+#partner-con {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.partner-icon {
+    height: 128px;
+    width: 128px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 15px;
+}
+
+#become-con {
+    h3 {
+        margin-bottom: 30px;
+    }
+}
+
+#about-contact-link {
+    color: v.$green;
+}
+
+#about-title-tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #mission-text {
+        img {
+            max-height: 190px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    #long-pic {
+        height: 100%;
+        background-position: center;
+    }
+
+    #short-pic {
+        height: 190px;
+    }
+
+    #story-con {
+        p {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 30px;
+        }
+    }
+
+    #about-video-con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-video {
+        max-width: 70%;
+    }
+
+    #leadership-text {
+        margin-bottom: 40px;
+        h3 {
+            text-align: center;
+        }
+    }
+
+    #members {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .member-pic {
+        height: 181px;
+        width: 186px;
+        margin-bottom: 15px;
+    }
+
+    #you-icon {
+        background-size: 80%;
+        background-position: 60% 95%;
+    }
+
+    .member-profile {
+        max-width: 186px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .member-name {
+        margin-bottom: 10px;
+    }
+
+    #you-img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 250px;
+    }
+
+    #you-text {
+        justify-content: center;
+    }
+
+    #about-button {
+        align-self: flex-start;
+        a {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 12px;
+        }
+    }
+
+    #our-partners {
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .partner-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 20px;
+        border-radius: 20px;
+        img {
+            width: 106px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+
+    #become-con {
+        display: flex;
+    }
+
+    #partner-img-con {
+        height: 232px;
+        margin-bottom: 20px;
+        background-position: 80%;
+    }
+
+    #about-title-mobile {
+        display: none;
+    }
+
+    #about-title-tablet {
+        display: block;
+    }
+
+    #become-text-con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+    }
+
+    .sponsor-icon {
+        height: 110px;
+        width: 110px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #mission-text {
+        img {
+            max-height: 300px;
+        }
+    }
+
+    .portable {
+        display: none!important;
+    }
+
+    #short-pic {
+        height: 300px;
+    }
+
+    #about-video {
+        max-width: 80%;
+    }
+
+    .member-profile {
+        max-width: 100%;
+    }
+
+    .member-pic {
+        height: 290px;
+        width: 300px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .about-shader {
+        display: none;
+        position: absolute;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+    .member-name {
+        margin-bottom: 70px;
+        z-index: 1;
+    }
+
+    .bottom-member {
+        margin-bottom: 0;
+    }
+
+    .member-text {
+        display: none;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        left: auto;
+        right: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        transform: translateY(-50%);
+    }
+
+    .green-bumper {
+        height: 10px;
+        width: 100%;
+        background-color: v.$green;
+        transition: all ease-in-out 0.5s;
+        position: absolute;
+        z-index: -1;
+        top: 290px;
+    }
+
+    .member-profile:hover {
+        .member-text {
+            display: block;
+            color: white;
+        }
+
+        .about-shader {
+            display: block;
+        }
+
+        .green-bumper {
+            height: 60px;
+        }
+    }
+
+    #you-text {
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+
+    #you-img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 400px;
+    }
+
+    #about-button {
+        margin-top: 45px;
+        a {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 23px;
+        }
+    }
+
+    #partner-con {
+        margin-bottom: 30px;
+    }
+
+    .partner-info {
+        img {
+            width: 170px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    #partner-img-con {
+        height: 360px;
+    }
+
+    .sponsor-icon {
+        height: 125px;
+        width: 125px;
+        margin-bottom: 10px;
+    }
+}
+
+// @media screen and (min-width: 1920px) {
+//     #mission-text {
+//         img {
+//             max-height: 480px;
+//         }
+//     }
+
+//     .member-pic {
+//         height: 468px;
+//         width: 486px;
+//     }
+
+//     .member-text {
+//         top: 40%; //Sophia change this please to whatever looks centered please and thanks! I just took a guess at the variable~
+//     }
+
+//     .green-bumper { //Sophia change this too to whatever you like please and thanks! 
+//         height: 15px;
+//         top: 465px;
+//     }
+
+//     #you-text {
+//         h3 {
+//             margin-bottom: 30px;
+//         }
+//     }
+
+//     #you-img {
+//         margin-top: 70px;
+//         margin-bottom: 70px;
+//         height: 500px;
+//     }
+
+//     #about-button {
+//         margin-top: 55px;
+//         a {
+//             padding-left: 60px;
+//             padding-right: 60px;
+//             padding-top: 30px;
+//             padding-bottom: 30px;
+//             font-size: 27px;
+//         }
+//     }
+
+//     .partner-info {
+//         img {
+//             width: 170px;
+//         }
+//         p {
+//             font-size: 20px;
+//         }
+//     }
+
+//     #partner-img-con {
+//         height: 420px;
+//     }
+// }

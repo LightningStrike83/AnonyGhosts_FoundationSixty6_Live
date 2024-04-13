@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <title>Edit Career</title>
+</head>
+<body data-page="edit-career">
+    <section class="full-width-grid-con admin-form">
+        <div class="col-span-full">
+            <form id="edit-career-form" method="POST" enctype="multipart/form-data">
+                <input name="pk" type="hidden" :value="careerInfo.id">
+                <label for="reference">Reference Number:</label><br><br>
+                <input name="reference" type="text" required :value="careerInfo.reference"><br><br><br>
+                <label for="title">Career Title:</label><br><br>
+                <input name="title" type="text" required :value="careerInfo.title"><br><br><br>
+                <label for="description">Career Description:</label><br><br>
+                <textarea name="description" required :value="careerInfo.description"></textarea><br><br>
+                <input class="admin-submit" name="submit" type="submit" value="Add">
+              </form>
+              <p id="career-feedback-area"></p>
+        </div>
+    </section>
+
+</body>
+</html>

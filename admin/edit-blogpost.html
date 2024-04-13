@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <title>Edit Blog Post</title>
+</head>
+<body data-page="edit-blog-post">
+    <section class="full-width-grid-con admin-form">
+        <div class="col-span-full">
+            <form id="edit-blogpost-form" method="POST" enctype="multipart/form-data">
+                <input name="pk" type="hidden" :value="blogpostInfo.id">
+                <label for="title">Blog Title:</label><br><br>
+                <input name="title" type="text" required :value="blogpostInfo.title"><br><br><br>
+                <label for="description">Blog Description:</label><br><br>
+                <input name="description" type="text" required :value="blogpostInfo.description"><br><br><br>
+                <label for="author">Blog Author:</label><br><br>
+                <input name="author" type="number" min="1" required :value="blogpostInfo.author"><br><br><br>
+                <label for="date">Blog Date:</label><br><br>
+                <input name="date" type="date" required :value="blogpostInfo.date"><br><br><br>
+                <label for="text">Blog Text:</label><br><br>
+                <textarea name="text" required :value="blogpostInfo.text"></textarea><br><br>
+                <input class="admin-submit" name="submit" type="submit" value="Add">
+              </form>
+              <p id="blog-post-feedback-area"></p>
+        </div>
+    </section>
+
+</body>
+</html>

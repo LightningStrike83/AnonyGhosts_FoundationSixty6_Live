@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <title>Edit Event</title>
+</head>
+<body data-page="edit-event">
+    <section class="full-width-grid-con admin-form">
+        <div class="col-span-full">
+            <form id="edit-event-form" method="POST" enctype="multipart/form-data">
+                <input name="pk" type="hidden" value="eventInfo.id">
+                <label for="title">Event Title:</label><br><br>
+                <input name="title" type="text" required :value="eventInfo.title"><br><br><br>
+                <label for="date">Event Date:</label><br><br>
+                <input name="date" type="text" required :value="eventInfo.date"><br><br><br>
+                <label for="place">Event Location:</label><br><br>
+                <input name="place" type="text" required :value="eventInfo.place"><br><br><br>
+                <label for="time">Event Time:</label><br><br>
+                <input name="time" type="text" required :value="eventInfo.time"><br><br><br>
+                <label for="description">Event Description:</label><br><br>
+                <textarea name="description" required :value="eventInfo.description"></textarea><br><br>
+                <input class="admin-submit" name="submit" type="submit" value="Add">
+              </form>
+              <p id="event-feedback-area"></p>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers and Volunteers- Foundation Sixty6</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#3a53a4">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" defer src="js/main.js"></script>
+</head>
+<body data-page="career-volunteer">
+    <h1 class="hidden">Foundation Sixty6 Careers and Volunteers Page</h1>
+
+    <header class="full-width-grid-con">
+      <div id="header-con" class="grid-con">
+
+        <div id="header-logo" class="col-span-2 m-col-span-3">
+          <a href="index.html"><img src="images/logo-final.svg" alt="Foundation Sixty6 logo"></a>
+        </div>
+
+        <div id="hamburger-menu-icon" class="col-start-4 col-end-5">
+          <svg id="hamburger-menu" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.83 22">
+              <defs>
+                <style>
+                  .cls-20 {
+                    fill: #3A53A4;
+                    stroke: #3A53A4;
+                    stroke-miterlimit: 10;
+                    stroke-width: 3px;
+                  }
+                </style>
+              </defs>
+              <g id="dashes" data-name="Layer 2">
+                <line class="cls-20" y1="1" x2="51.83" y2="1"/>
+                <line class="cls-20" y1="11" x2="51.83" y2="11"/>
+                <line class="cls-20" y1="21" x2="51.83" y2="21"/>
+              </g>
+            </svg>
+        </div>
+
+        <div id="nav-menu" class="m-col-span-7">
+              <p><a href="get-services.html">Services</a></p>
+              <p><a href="network.html">Network</a></p>
+              <p id="explore" class="drop-menu">Explore ▼</p>
+              <p><a href="about.html">About</a></p>
+              <p><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div id="explore-menu" class="expand-menu">
+          <a href="events.html">Events</a>
+          <a href="blog.html">Blog</a>
+          <a href="career-volunteer.html">Careers & Volunteering</a>
+        </div>
+
+        <a href="donate.html" class="col-span-full m-col-span-2">
+          <div id="donate-button">
+            <div><span class="donate-text">Donate</span></div>
+          </div>
+        </a>
+      </div>
+    </header>
+    
+    <section id="cv-hero" class="full-width-grid-con">
+        <div class="col-span-full hero-image">
+          <h2 class="hidden">Careers and Volunteers Hero Image</h2>
+            <p class="hero-text">Careers and Volunteer Opportunities</p>
+        </div>
+    </section>
+
+    <section id="cv-text-con" class="grid-con">
+        <div id="cv-text" class="col-span-full m-col-start-2 m-col-end-7">
+            <h3 class="dmt">WHY VOLUNTEER FOR US?</h3>
+            <p class="dmt">Volunteer with Foundation Sixty6 to directly impact youth mental health. Your commitment enhances access to mental healthcare for young individuals facing conditions like psychosis, bipolar disorder, and schizophrenia. Join us in creating a brighter, more resilient future for youth.</p>
+            <a href="#volunteer-opportunities" class="custom-button">View Listings</a>
+        </div>
+
+        <div id="cv-image" class="col-span-full m-col-span-6"></div>
+    </section>
+
+    <section id="cv-build" class="full-width-grid-con">
+      <div class="grid-con">
+        <div id="build-text" class="col-span-full m-col-start-7 m-col-end-12">
+          <h3 class="dmt">BUILD YOUR CAREER WITH US</h3>
+          <p class="dmt">Join Foundation Sixty6 for a purpose-driven career, shaping the future of youth mental health. Contribute to improved access to mental healthcare for ages 16-25, making a lasting impact on young minds. Your career here is a direct avenue for positive change in mental health.</p>
+          <a href="#career-opportunities" class="custom-button">View Listings</a>
+      </div>
+
+      <div id="build-image" class="col-span-full m-col-span-6"></div>
+      </div>
+    </section>
+
+    <section id="cv-opportunities" class="grid-con">
+        <div id="opportunities-title" class="col-span-full">
+            <h3 class="dmt">Opportunities</h3>
+            <p class="dmt">Fill out the form below with your information and the reference number of the opportunity you are applying for.</p>
+        </div>
+        <div id="volunteer-opportunities" class="col-span-full m-col-start-2 m-col-end-7 cv-div">
+            <h3 class="cv-box-title">Volunteer Opportunities</h3>
+            <div class="catch-handle"></div>
+            <div class="v-box-listing" v-for="volunteer in volunteerList">
+                <h3 class="reference-number dmt">{{volunteer.reference}}</h3>
+                <div class="v-details">
+                    <p class="v-event-title v-event-text dmt">{{volunteer.title}}</p>
+                    <p class="v-event-location v-event-text dmt">Location: {{volunteer.location}}</p>
+                    <p class="v-event-date v-event-text dmt">Date: {{volunteer.date}}</p>
+                    <p class="v-event-time v-event-text dmt">Time: {{volunteer.time}}</p>
+                    <p class="v-event-text dmt">Description: {{volunteer.description}}</p>
+                </div>
+
+                <div class="cv-break"></div>
+            </div>
+        </div>
+        <div id="career-opportunities" class="col-span-full m-col-start-7 m-col-end-12 cv-div">
+            <h3 class="cv-box-title">Career Opportunities</h3>
+            <div class="catch-handle"></div>
+            <div class="c-box-listing" v-for="career in careerList">
+                <h3 class="reference-number dmt">{{career.reference}}</h3>
+                <p class="c-position dmt">{{career.title}}</p>
+                <p class="c-description dmt">{{career.description}}</p>
+                <div class="cv-break"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv-form" class="full-width-grid-con">
+      <h2 class="hidden">Contact Form</h2>
+        <div id="cv-contact">
+            <div id="cv-form-con" class="grid-con">
+              <div id="cv-form-t" class="col-span-full m-col-start-2 m-col-end-12">
+                <form id="cv-page-form" class="contact-form">
+                  <div class="form-style">
+                    <label for="full_name">Full Name*</label><br><br>
+                    <input id="full_name" name="full_name" type="text" placeholder="Your Full Name"><br>
+                  </div>
+                  <div class="form-style">
+                    <label for="email">Email*</label><br><br>
+                    <input id="email" name="email" type="text" placeholder="Your Email"><br>
+                  </div>
+                  <div class="form-style">
+                    <label for="subject">Reference Number*</label><br><br>
+                    <input id="subject" name="subject" type="text" placeholder="#"><br>
+                  </div>
+                  <div class="form-style">
+                    <label for="message">Tell Us Something About Yourself*</label><br><br>
+                    <textarea id="message" name="message"></textarea><br><br>
+                  </div>
+
+                    <input id="cv-send" class="send-button" type="submit" value="Submit" >
+                </form>
+              </div>
+            </div>
+
+            <div id="message-confirm" class="col-span-full"></div>
+            <div id="feedback-area" class="col-span-full"></div>
+          </div> 
+    </section>
+
+    <footer class="full-width-grid-con">
+      <div class="grid-con">
+        <div id="footer-logo-con" class="col-start-2 col-end-4 m-col-span-3">
+          <a href="index.html"><img id="footer-logo" src="images/logo-final.svg" alt="logo"></a>
+        </div>
+
+        <div id="footer-links" class="col-span-full m-col-span-4">
+          <ul>
+            <li><a href="get-services.html">Services</a></li>
+            <li><a href="network.html">Network</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="career-volunteer.html">Volunteer</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+
+        <div id="sm-newsletter" class="col-span-full m-col-span-5">
+          <div id="sm-icons">
+            <a class="footer-sm-icon" href="#"><img src="images/icons/tiktok.svg" alt="TikTok Icon"></a>
+            <a class="footer-sm-icon" href="#"><img src="images/icons/youtube.svg" alt="Youtube Icon"></a>
+            <a class="footer-sm-icon" href="#"><img src="images/icons/facebook.svg" alt="Facebook Icon"></a>
+            <a class="footer-sm-icon" href="#"><img src="images/icons/instagram.svg" alt="Instagram Icon"></a>
+            <a class="footer-sm-icon" href="#"><img src="images/icons/linkedin.svg" alt="LinkedIn Icon"></a>
+          </div>
+
+          <p id="newsletter-title">Subscribe To Our Newsletter</p>
+
+          <form class="newsletter-sign-up">
+            <label for="email"></label>
+            <input id="email" name="email" type="text">
+            <input id="newsletter-send" type="submit" value="Submit">
+          </form>
+
+          <div id="newsletter-feedback"></div>
+          <div id="newsletter-confirm"></div>
+        </div>
+      </div>
+    </footer>
+  
+    <section id="bottom-menu">
+      <h2 class="hidden">Bottom Menu</h2>
+      <div id="activation-button">
+        <img class="bottom-icon" src="images/icons/information2.png" alt="Menu Icon">
+      </div>
+      
+      <template id="button-template">
+        <div class="clone-div">
+          <img class="clone-img">
+        </div>
+      </template>
+    </section>
+
+    <section class="nav-lightbox lightbox">
+      <h2 class="hidden">Mobile Menu</h2>
+      <div class="grid-con">
+        <p class="lb-close col-start-4 col-end-5">X</p>
+        <div id="lightbox-menu" class="col-span-full">
+          <p><a href="get-services.html">Services</a></p>
+          <p><a href="network.html">Network</a></p>
+          <p><a href="about.html">About</a></p>
+          <p><a href="events.html">Events</a></p>
+          <p><a href="career-volunteer.html">Careers & Volunteering</a></p>
+          <p><a href="blog.html">Blog</a></p>
+          <p><a href="contact.html">Contact</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+  </html>

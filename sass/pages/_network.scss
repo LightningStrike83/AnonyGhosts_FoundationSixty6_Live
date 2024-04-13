@@ -1,0 +1,131 @@
+@use "../abstracts/variables" as v;
+
+#network-hero {
+    background-image: url(../images/hero-images/network.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 20%;
+    background-size: cover;
+    position: relative;
+}
+
+#connect-why li, #network-goals li {
+    list-style-type: disc;
+    margin-left: 5%;
+}
+
+#connect-why li::marker, #network-goals li::marker {
+    color: v.$green;
+    fill: v.$green;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+#get-connected {
+    a {
+        transition: all ease-in-out 0.5s;
+        color: v.$green;
+        &:hover {
+            opacity: 70%;
+        }
+    }
+}
+
+#our-network, #connect-why, #network-goals, #get-connected-con {
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-bottom: 20px;
+    }
+}
+
+#network-goals p {
+    margin-bottom: 20px;
+}
+
+#contact-redirect {
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/envelope.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    .shader {
+        border-radius: 20px
+    }
+    h3 {
+        color: white;
+    }
+    &:hover {
+        opacity: 70%;
+    }
+}
+
+#volunteer-network-redirect {
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/volunteer.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    border-radius: 20px;
+    .shader {
+        border-radius: 20px
+    }
+    h3 {
+        color: white;
+    }
+    &:hover {
+        opacity: 70%;
+    }
+}
+
+#get-connected {
+    margin-bottom: 20px;
+}
+
+#network-image {
+    background-image: url(../images/unity.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    #network-image {
+        margin-top: 0;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #get-connected {
+        margin-bottom: 30px;
+    }
+
+    #contact-redirect, #volunteer-network-redirect {
+        height: 300px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <title>Edit Volunteer</title>
+</head>
+<body data-page="edit-volunteer">
+    <section class="full-width-grid-con admin-form">
+        <div class="col-span-full">
+            <form id="edit-volunteer-form" method="POST" enctype="multipart/form-data">
+                <input name="pk" type="hidden" value="volunteerInfo.id">
+                <label for="reference">Reference Number:</label><br><br>
+                <input name="reference" type="text" :value="volunteerInfo.reference"><br><br><br>
+                <label for="title">Volunteer Title:</label><br><br>
+                <input name="title" type="text" required :value="volunteerInfo.title"><br><br><br>
+                <label for="date">Volunteer Date:</label><br><br>
+                <input name="date" type="text" required :value="volunteerInfo.date"><br><br><br>
+                <label for="location">Volunteer Location:</label><br><br>
+                <input name="location" type="text" required :value="volunteerInfo.location"><br><br><br>
+                <label for="time">Volunteer Time:</label><br><br>
+                <input name="time" type="text" required :value="volunteerInfo.time"><br><br><br>
+                <label for="description">Volunteer Description:</label><br><br>
+                <textarea name="description" required :value="volunteerInfo.description"></textarea><br><br>
+                <input class="admin-submit" name="submit" type="submit" value="Add">
+              </form>
+              <p id="volunteer-feedback-area"></p>
+        </div>
+    </section>
+
+</body>
+</html>

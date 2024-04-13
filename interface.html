@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home- Foundation Sixty6</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#3a53a4">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/a7c4f622e4.js" crossorigin="anonymous"></script>
+    <script type="module" defer src="js/main.js"></script>
+</head>
+<body data-page="admin">
+    <h1 class="hidden">Foundation Sixty6 Home Page</h1>
+
+    <header class="full-width-grid-con">
+      <div id="header-con" class="grid-con">
+
+        <div id="header-logo" class="col-span-2 m-col-span-3">
+          <a href="index.html"><img src="images/logo-final.svg" alt="Foundation Sixty6 logo"></a>
+        </div>
+
+        <div id="hamburger-menu-icon" class="col-start-4 col-end-5">
+          <svg id="hamburger-menu" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.83 22">
+              <defs>
+                <style>
+                  .cls-20 {
+                    fill: #3A53A4;
+                    stroke: #3A53A4;
+                    stroke-miterlimit: 10;
+                    stroke-width: 3px;
+                  }
+                </style>
+              </defs>
+              <g id="dashes" data-name="Layer 2">
+                <line class="cls-20" y1="1" x2="51.83" y2="1"/>
+                <line class="cls-20" y1="11" x2="51.83" y2="11"/>
+                <line class="cls-20" y1="21" x2="51.83" y2="21"/>
+              </g>
+            </svg>
+        </div>
+
+        <div id="nav-menu" class="m-col-span-7">
+              <p><a href="get-services.html">Services</a></p>
+              <p><a href="network.html">Network</a></p>
+              <p id="explore" class="drop-menu">Explore ▼</p>
+              <p><a href="about.html">About</a></p>
+              <p><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div id="explore-menu" class="expand-menu">
+          <a href="events.html">Events</a>
+          <a href="blog.html">Blog</a>
+          <a href="career-volunteer.html">Careers & Volunteering</a>
+        </div>
+
+        <a href="donate.html" class="col-span-full m-col-span-2">
+          <div id="donate-button">
+            <div><span class="donate-text">Donate</span></div>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <section id="event-list-con" class="admin-list grid-con">
+      <div class="see-more col-span-full">
+        <h3>Event List</h3>
+        <p data-member="1">See All ▼</p>
+      </div>
+
+      <div id="event-list" class="col-span-2 m-col-span-6 admin-info-1"></div>
+
+      <div id="event-form" class="col-span-2 m-col-span-6 admin-info-1">
+        <h3 class="admin-h3">Add A New Event</h3>
+        <form id="admin-add-event" method="POST" enctype="multipart/form-data">
+          <label for="title">Event Title:</label><br><br>
+          <input name="title" type="text" required><br><br><br>
+          <label for="date">Event Date:</label><br><br>
+          <input name="date" type="text" required><br><br><br>
+          <label for="place">Event Location:</label><br><br>
+          <input name="place" type="text" required><br><br><br>
+          <label for="time">Event Time:</label><br><br>
+          <input name="time" type="text" required><br><br><br>
+          <label for="description">Event Description:</label><br>
+          <textarea name="description" required></textarea><br><br>
+          <input name="image_filename" type="file" required><br>
+          <input class="admin-submit" name="submit" type="submit" value="Add">
+        </form>
+
+        <div id="event-add-feedback"></div>
+      </div>
+    </section>
+
+    <section id="blog-list-con" class="admin-list grid-con">
+      <div class="see-more col-span-full">
+        <h3>Blog List</h3>
+        <p data-member="2">See All ▼</p>
+      </div>
+
+      <div id="blog-list" class="col-span-2 m-col-span-6 admin-info-2"></div>
+
+      <div id="blog-form" class="col-span-2 m-col-span-6 admin-info-2">
+        <h3 class="admin-h3">Add A New Blog Entry</h3>
+        <form id="admin-add-blog" method="POST" enctype="multipart/form-data">
+          <label for="title">Blog Title:</label><br><br>
+          <input name="title" type="text" required><br><br><br>
+          <label for="description">Blog Description:</label><br><br>
+          <input name="description" type="text" required><br><br><br>
+          <label for="author">Blog Author:</label><br><br>
+          <input name="author" type="number" min="1" value="1" required><br><br><br>
+          <label for="date">Blog Date:</label><br><br>
+          <input name="date" type="date" required><br><br><br>
+          <label for="text">Blog Text:</label><br><br>
+          <textarea name="text" required></textarea><br><br>
+          <input name="image_filename" type="file" required><br>
+          <input class="admin-submit" name="submit" type="submit" value="Add">
+        </form>
+
+        <div id="blog-add-feedback"></div>
+      </div>
+    </section>
+
+    <section id="volunteer-list-con" class="admin-list grid-con">
+      <div class="see-more col-span-full">
+        <h3>Volunteer List</h3>
+        <p data-member="3">See All ▼</p>
+      </div>
+
+      <div id="volunteer-list" class="col-span-2 m-col-span-6 admin-info-3"></div>
+
+      <div id="volunteer-form" class="col-span-2 m-col-span-6 admin-info-3">
+        <h3 class="admin-h3">Add A New Volunteer Listing</h3>
+        <form id="admin-add-volunteer" method="POST" enctype="multipart/form-data">
+          <label for="reference">Reference Number:</label><br><br>
+          <input name="reference" type="text"><br><br><br>
+          <label for="title">Volunteer Title:</label><br><br>
+          <input name="title" type="text" required><br><br><br>
+          <label for="date">Volunteer Date:</label><br><br>
+          <input name="date" type="text" required><br><br><br>
+          <label for="location">Volunteer Location:</label><br><br>
+          <input name="location" type="text" required><br><br><br>
+          <label for="time">Volunteer Time:</label><br><br>
+          <input name="time" type="text" required><br><br><br>
+          <label for="description">Volunteer Description:</label><br><br>
+          <textarea name="description" required></textarea><br><br>
+          <input class="admin-submit" name="submit" type="submit" value="Add">
+        </form>
+
+        <div id="volunteer-add-feedback"></div>
+      </div>
+    </section>
+
+    <section id="career-list-con" class="admin-list grid-con">
+      <div class="see-more col-span-full">
+        <h3>Career List</h3>
+        <p data-member="4">See All ▼</p>
+      </div>
+
+      <div id="career-list" class="col-span-2 m-col-span-6 admin-info-4"></div>
+
+      <div id="career-form" class="col-span-2 m-col-span-6 admin-info-4">
+        <h3 class="admin-h3">Add A New Career Opportunity</h3>
+        <form id="admin-add-career" method="POST" enctype="multipart/form-data">
+          <label for="reference">Reference Number:</label><br><br>
+          <input name="reference" type="text"><br><br><br>
+          <label for="title">Career Title:</label><br><br>
+          <input name="title" type="text" required><br><br><br>
+          <label for="description">Career Description:</label><br><br>
+          <textarea name="description" required></textarea><br><br>
+          <input class="admin-submit" name="submit" type="submit" value="Add">
+        </form>
+
+        <div id="career-add-feedback"></div>
+      </div>
+    </section>
+
+    <section id="partner-list-con" class="admin-list grid-con">
+      <div class="see-more col-span-full">
+        <h3>Partner List</h3>
+        <p data-member="5">See All ▼</p>
+      </div>
+
+      <div id="partner-list" class="col-span-2 m-col-span-6 admin-info-5"></div>
+
+      <div id="partner-form" class="col-span-2 m-col-span-6 admin-info-5">
+        <h3 class="admin-h3">Add A New Partner</h3>
+        <form id="admin-add-partner" method="POST" enctype="multipart/form-data">
+          <label for="name">Name:</label><br><br>
+          <input name="name" type="text" required><br><br><br>
+          <label for="page_url">Link:</label><br><br>
+          <input name="page_url" required><br><br>
+          <input name="image_url" type="file" required><br>
+          <input class="admin-submit" name="submit" type="submit" value="Add">
+        </form>
+
+        <div id="partner-add-feedback"></div>
+      </div>
+    </section>
+
+    <footer class="full-width-grid-con">
+        <div class="grid-con">
+          <div id="footer-logo-con" class="col-start-2 col-end-4 m-col-span-3">
+            <a href="index.html"><img id="footer-logo" src="images/logo.svg" alt="logo"></a>
+          </div>
+  
+          <div id="footer-links" class="col-span-full m-col-span-4">
+            <ul>
+              <li><a href="get-services.html">Services</a></li>
+              <li><a href="network.html">Network</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="career-volunteer.html">Volunteer</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="donate.html">Donate</a></li>
+            </ul>
+          </div>
+  
+          <div id="sm-newsletter" class="col-span-full m-col-span-5">
+            <div id="sm-icons">
+              <a class="footer-sm-icon" href="#"><img src="images/icons/tiktok.svg" alt="TikTok Icon"></a>
+              <a class="footer-sm-icon" href="#"><img src="images/icons/youtube.svg" alt="Youtube Icon"></a>
+              <a class="footer-sm-icon" href="#"><img src="images/icons/facebook.svg" alt="Facebook Icon"></a>
+              <a class="footer-sm-icon" href="#"><img src="images/icons/instagram.svg" alt="Instagram Icon"></a>
+              <a class="footer-sm-icon" href="#"><img src="images/icons/linkedin.svg" alt="LinkedIn Icon"></a>
+            </div>
+  
+            <p id="newsletter-title">Subscribe To Our Newsletter</p>
+  
+            <form class="newsletter-sign-up">
+              <label for="email"></label>
+              <input id="email" name="email" type="text">
+              <input id="newsletter-send" type="submit" value="Submit">
+            </form>
+
+            <div id="newsletter-feedback"></div>
+            <div id="newsletter-confirm"></div>
+          </div>
+        </div>
+      </footer>
+  
+      <section id="bottom-menu">
+        <h2 class="hidden">Bottom Menu</h2>
+        <div id="activation-button">
+          <img class="bottom-icon" src="images/icons/information2.png" alt="Menu Icon">
+        </div>
+        
+        <template id="button-template">
+          <div class="clone-div">
+            <img class="clone-img">
+          </div>
+        </template>
+      </section>
+  
+      <section class="nav-lightbox lightbox">
+        <h2 class="hidden">Mobile Menu</h2>
+        <div class="grid-con">
+          <p class="lb-close col-start-4 col-end-5">X</p>
+          <div id="lightbox-menu" class="col-span-full">
+            <p><a href="get-services.html">Services</a></p>
+            <p><a href="network.html">Network</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="events.html">Events</a></p>
+            <p><a href="career-volunteer.html">Careers & Volunteering</a></p>
+            <p><a href="blog.html">Blog</a></p>
+            <p><a href="contact.html">Contact</a></p>
+          </div>
+        </div>
+      </section>
+  </body>
+  </html>

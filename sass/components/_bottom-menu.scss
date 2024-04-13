@@ -1,0 +1,80 @@
+@use "../abstracts/variables" as v;
+
+#bottom-menu {
+    background-color: transparent;
+    bottom: 0;
+    position: fixed;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0!important;
+}
+
+.bottom-icon {
+    background-color: black;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.5s ease-in-out;
+    position: sticky;
+    bottom: 0;
+    left: 90%;
+    z-index: 10;
+    cursor: pointer;
+    &:hover {
+        background-color: pink;
+        border: 1px solid pink;
+    }
+}
+
+#activation-icon {
+    z-index: 20;
+    order: 1!important;
+}
+
+#dark-mode, #emergency-phone {
+    transition: all ease-in-out 1s;
+}
+
+#dark-mode {
+    order: -1;
+}
+
+#emergency-phone {
+    order: -2;
+    display: flex;
+    align-items: center;
+}
+
+#emergency-phone p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+#number-window {
+    position: absolute;
+    right: 100%;
+    margin-right: 30px;
+    padding: 30px;
+    background-color: v.$blue;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .botton-icon {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #emergency-phone p:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+
+    #number-window {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 50px;
+    }
+}
