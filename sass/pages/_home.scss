@@ -30,6 +30,10 @@
     }
 }
 
+#home-hero-text {
+    padding-top: 10px!important;
+}
+
 .home-hero-supplementary-text {
     font-size: 12px;
     z-index: 5;
@@ -268,8 +272,11 @@
     }
 
     .home-hero-supplementary-text {
-        font-size: 15px;
-        padding: 20px;
+        font-size: 14px;
+        padding: 10px;
+        padding-top: 0!important;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
     #waw-text {
@@ -377,14 +384,14 @@
 
     #home-hero {
         .hero-text {
-            padding-bottom: 15px;
+            padding-bottom: 10px;
             line-height: normal;
         }
     }
 
     .home-hero-supplementary-text {
-        font-size: 20px;
-        padding-bottom: 30px;
+        font-size: 18px;
+        padding-bottom: 15px;
     }
 
     #waw-image {
