@@ -5,7 +5,7 @@ export function heroHeader() {
     const heroLink = document.querySelector("#home-hero-link")
     let i = 0
 
-    const interval = setInterval(changehero, 6000)
+    //const interval = setInterval(changehero, 6000)
 
     const leftArrow = document.querySelector("#left-arrow")
     const rightArrow = document.querySelector("#right-arrow")
@@ -20,7 +20,7 @@ export function heroHeader() {
 
         {
             heroText: "Learn About The Foundation",
-            supportText: "Explore the Foundation's roots, to glimpse into the hearts and souls of the people that wanted to make a difference",
+            supportText: "Explore the Foundation's roots, to glimpse into the hearts and souls of the people that want to make a difference and help provide to families and youth in need",
             background: "foundation.png",
             link: "about.html"
         },

@@ -8,15 +8,6 @@ export function services() {
         //     desc: "",
         //     link: "",
         // },
-
-        {
-            title: "Counseling Services",
-            icon: "images/talk.svg",
-            desc: "Provide individual or group counseling sessions facilitated by trained mental health professionals to address specific mental health concerns.",
-            link: "Contact Us",
-            linkpath: "contact.html",
-        },
-
         {
             title: "Referrals and Connections",
             icon: "images/chat.svg",
