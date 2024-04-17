@@ -8,12 +8,17 @@
     position: relative;
 }
 
-#connect-why li, #network-goals li {
+#connect-why li, #network-goals li, #gaps li {
     list-style-type: disc;
     margin-left: 5%;
+    margin-bottom: 5px;
 }
 
-#connect-why li::marker, #network-goals li::marker {
+#network-goals li {
+    margin-bottom: 20px;
+}
+
+#connect-why li::marker, #network-goals li::marker, #gaps li::marker {
     color: v.$green;
     fill: v.$green;
 }
@@ -32,13 +37,13 @@
     }
 }
 
-#our-network, #connect-why, #network-goals, #get-connected-con {
+#our-network, #connect-why, #network-goals, #get-connected-con, #gaps {
     h3 {
         text-align: center;
         margin-bottom: 20px;
     }
 
-    p:not(:last-of-type) {
+    p {
         margin-bottom: 20px;
     }
 

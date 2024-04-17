@@ -10,7 +10,7 @@ export function services() {
         // },
         {
             title: "Referrals and Connections",
-            icon: "images/chat.svg",
+            icon: "images/connect.svg",
             desc: "We can connect you to someone who can help support you or your family through our network of supports.",
             link: "Contact Us",
             linkpath: "contact.html",
@@ -18,7 +18,7 @@ export function services() {
 
         {
             title: "Resources",
-            icon: "images/idea.svg",
+            icon: "images/books.svg",
             desc: "We can provide resources to help your family's struggle and help educate on the struggles of mental health and what you can do to help support someone who's struggling.",
             link: "Learn More",
             linkpath: "contact.html",

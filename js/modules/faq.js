@@ -66,7 +66,7 @@ export function FAQ() {
 
                 plus.textContent= "+"
 
-                this.style.backgroundColor = "#FFF"
+    
             } else {
                 let p = document.createElement("p")
 
@@ -77,8 +77,6 @@ export function FAQ() {
                 plus.textContent= "-"
 
                 this.appendChild(p)
-
-                this.style.backgroundColor = "#A3D667"
             }
     }
 
