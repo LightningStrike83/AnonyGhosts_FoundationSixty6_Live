@@ -50,6 +50,7 @@ export function donateVideo() {
             fact.textContent = stat.fact
             action.textContent = stat.action
 
+            fact.setAttribute("class", "dmt")
             action.setAttribute("class", "action-text")
 
             div.setAttribute("class", "col-span-full stat-div")

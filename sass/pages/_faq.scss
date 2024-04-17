@@ -27,6 +27,7 @@
 }
 
 .q-text {
+    background-color: v.$green;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 50px;
@@ -60,6 +61,10 @@
     margin-left: 10px;
     padding-left: 5px;
     margin-bottom: 10px;
+}
+
+#further a {
+    background-color: #fff;
 }
 
 @media screen and (min-width: 768px) {
