@@ -118,7 +118,21 @@
     height: 200px;
 }
 
+#part-image {
+    background-image: url(../images/teenager-window.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    height: 200px;
+}
+
 @media screen and (min-width: 768px) {
+    #part-image {
+        order: -1;
+        height: auto;
+    }
+
     #network-image {
         margin-top: 0;
         height: auto;

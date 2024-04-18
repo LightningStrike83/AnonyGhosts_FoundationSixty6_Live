@@ -25,6 +25,14 @@ export function services() {
         },
 
         {
+            title: "Accurate Information",
+            icon: "images/accurate.svg",
+            desc: "There is a lot of misinformation being spread around regarding mental illness, so we strive to provide accurate information and break the stigmas surrounding it.",
+            link: "Learn More",
+            linkpath: "index.html",
+        },
+
+        {
             title: "Community-Based Programs",
             icon: "images/unity.png",
             desc: "Establish residential facilities or community-based programs that offer a supportive environment for individuals with severe mental health conditions.",
